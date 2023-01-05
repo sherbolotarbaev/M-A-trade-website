@@ -87,10 +87,6 @@
     margin-bottom: 30px;
   }
 
-  /* Search */
-  .search {
-    display: none;
-  }
 }
 
 @media (max-width: 750px) {
@@ -121,8 +117,5 @@
     width: 360px;
   }
 
-  /* Search */
-  .search {
-    display: none;
-  }
+
 }
