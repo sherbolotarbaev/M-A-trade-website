@@ -87,24 +87,6 @@
     margin-bottom: 30px;
   }
 
-  .home-objects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home-img {
-    display: none;
-  }
-
-  .home-img2 {
-    display: block;
-  }
-
-  .home-img2 img {
-    width: 300px;
-  }
-
   /* Search */
   .search {
     display: none;
@@ -132,11 +114,11 @@
   }
 
   .home-img {
-    display: none;
+    margin-top: 0;
   }
 
-  .home-img2 {
-    display: block;
+  .home-img img {
+    width: 360px;
   }
 
   /* Search */
