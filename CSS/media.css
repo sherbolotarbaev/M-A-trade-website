@@ -74,8 +74,35 @@
 @media (min-width: 750px) and (max-width: 1000px) {
 
   /* Home Page */
+  .home-objects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .home-title h2 {
     font-size: 80px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .home-objects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-img {
+    display: none;
+  }
+
+  .home-img2 {
+    display: block;
+  }
+
+  .home-img2 img {
+    width: 300px;
   }
 }
 
@@ -88,5 +115,22 @@
 
   .home-title h2 {
     font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .home-objects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home-img {
+    display: none;
+  }
+
+  .home-img2 {
+    display: block;
   }
 }
