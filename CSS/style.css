@@ -1,0 +1,84 @@
+@import url(../CSS/media.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(218, 218, 218);
+
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Navbar section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  width: 100vw;
+  height: 75px;
+  background-color: rgb(21, 35, 42);
+  box-shadow: 0 0 5px #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-links,
+li,
+a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(255, 37, 17);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(0, 162, 255);
+  box-shadow: 0 0 10px rgb(0, 170, 255);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 170, 255);
+  color: #fff;
+}
+
+/* Home-Page section */
