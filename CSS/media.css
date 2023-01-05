@@ -104,6 +104,11 @@
   .home-img2 img {
     width: 300px;
   }
+
+  /* Search */
+  .search {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
@@ -132,5 +137,10 @@
 
   .home-img2 {
     display: block;
+  }
+
+  /* Search */
+  .search {
+    display: none;
   }
 }
