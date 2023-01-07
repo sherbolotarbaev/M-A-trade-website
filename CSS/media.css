@@ -94,6 +94,13 @@
     font-size: 80px;
     margin-top: 90px;
   }
+
+  /* Slider */
+  .slider-item img {
+    width: 900px;
+    height: 550px;
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -126,6 +133,18 @@
 
   /* Slider */
   .slider-item img {
-    padding: 50px;
+    width: 500px;
+    height: 250px;
+    padding-right: 50px;
+  }
+
+  /* About Page */
+  .about-title h2 {
+    font-size: 28px;
+  }
+
+  .about-title p {
+    width: 100%;
+    font-size: 15px;
   }
 }

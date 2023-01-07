@@ -33,8 +33,9 @@ header {
   padding: 30px 8%;
   width: 100vw;
   height: 75px;
-  background-color: rgb(21, 35, 42);
-  box-shadow: 0 0 20px #fff;
+  background-color: rgba(21, 35, 42, 0.79);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
 }
 
 .hamburger {
@@ -239,8 +240,8 @@ span {
 /* About section */
 .about-page {
   min-height: 100vh;
-  padding: 1.6rem 3rem;
-  background-color: #222222;
+  padding: 0 3rem 5rem 3rem;
+  background-color: rgb(23, 23, 23);
 }
 
 .about-title {
@@ -254,21 +255,22 @@ span {
 .about-title h2 {
   font-size: 28px;
   padding-bottom: 30px;
-  color: #fff;
+  color: rgb(255, 0, 0);
 }
 
 .about-title p {
+  width: 80%;
   font-size: 18px;
-  color: #fff;
+  color: #fafaff;
 }
 
 /* Slider */
 .slider {
-  padding: 70px 0 30px 0;
+  margin-top: 50px;
 }
 
 .slider-item img {
-  width: 400px;
-  height: 250px;
-  padding: 20px;
+  width: 1500px;
+  height: 550px;
+  padding-right: 90px;
 }

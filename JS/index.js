@@ -23,27 +23,23 @@ clear.onclick = function () {
 
 $(document).ready(function () {
   $(".slider").slick({
-    arrows: false,
     dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
     adaptiveHeight: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    speed: 500,
     autoplay: true,
-    autoplaySpeed: 2500,
-    pauseOnFocus: true,
-    pauseOnHover: true,
-    pauseOnDotsHover: true,
-    centerMode: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    cssEase: "linear",
 
-    responsive: [
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 750,
+    //     settings: {
+    //     },
+    //   },
+    // ],
   });
 });
