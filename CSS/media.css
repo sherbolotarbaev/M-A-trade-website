@@ -69,6 +69,15 @@
     color: rgb(233, 233, 233);
   }
 
+  /* Home Page */
+  .home-img {
+    margin-top: 80px;
+  }
+
+  /* Search bar */
+  .search {
+    display: none;
+  }
 }
 
 @media (min-width: 750px) and (max-width: 1000px) {
@@ -83,10 +92,8 @@
 
   .home-title h2 {
     font-size: 80px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 90px;
   }
-
 }
 
 @media (max-width: 750px) {
@@ -117,5 +124,8 @@
     width: 360px;
   }
 
-
+  /* Slider */
+  .slider-item img {
+    padding: 50px;
+  }
 }

@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(218, 218, 218);
@@ -81,13 +85,19 @@ button:hover {
 }
 
 /* Search */
+.search-navbar {
+  display: none;
+}
+
 .search {
   position: relative;
+  margin: 10px;
   width: 40px;
   height: 40px;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.269);
+  outline: 0;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.379);
   border-radius: 60px;
   transition: .5s;
 }
@@ -127,7 +137,7 @@ button:hover {
 }
 
 .search.active {
-  width: 300px;
+  width: 330px;
 }
 
 .search .input {
@@ -144,7 +154,7 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 250px;
   height: 100%;
   border: 0;
   outline: 0;
@@ -224,4 +234,41 @@ span {
 
 .home-img img {
   width: 500px;
+}
+
+/* About section */
+.about-page {
+  min-height: 100vh;
+  padding: 1.6rem 3rem;
+  background-color: #222222;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.about-title h2 {
+  font-size: 28px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.about-title p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Slider */
+.slider {
+  padding: 70px 0 30px 0;
+}
+
+.slider-item img {
+  width: 400px;
+  height: 250px;
+  padding: 20px;
 }

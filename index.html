@@ -8,13 +8,35 @@
 
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/media.css" />
+
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
   </head>
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <body>
     <main class="main">
+      <!-- Header / Navbar / Burger-Menu-->
       <header>
         <div class="logo">
           <img src="./Images/LogoPhone.png" alt="logo" width="70" />
         </div>
+
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-page">About Us</a></li>
+            <li><a href="#">Logistics</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </nav>
+        <!-- Search -->
         <div class="search">
           <div class="icon"></div>
           <div class="input">
@@ -22,22 +44,10 @@
           </div>
           <span class="clear"></span>
         </div>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <nav class="navbar">
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Logistics</a></li>
-            <li><a href="#">Products</a></li>
-          </ul>
-        </nav>
+
         <a class="cta" href="#"><button>Contacts</button></a>
       </header>
-
+      <!-- Home Page -->
       <section class="home-page">
         <div class="home-objects">
           <div class="home-title">
@@ -52,10 +62,36 @@
           </div>
         </div>
       </section>
-
-      <section class="about-page">
+      <!-- About Page -->
+      <section class="about-page" id="about-page">
         <div class="about-title">
           <h2>About-Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quae nobis, libero natus quas aut voluptatibus, animi quaerat illo
+            rerum optio in exercitationem dignissimos delectus ullam odio facere
+            labore placeat. Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Rem dolores est cum deleniti veritatis ducimus ratione, quod
+            pariatur excepturi, ipsum dolor eum animi! Incidunt placeat eligend.
+          </p>
+        </div>
+
+        <div class="slider">
+          <div class="slider-item">
+            <img src="./Images/IMG-CHINA-7.jpg" alt="1" />
+          </div>
+          <div class="slider-item">
+            <img src="./Images/IMG-CHINA-6.jpeg" alt="2" />
+          </div>
+          <div class="slider-item">
+            <img src="./Images/IMG-CHINA-5.jpeg" alt="3" />
+          </div>
+          <div class="slider-item">
+            <img src="./Images/IMG-CHINA-4.jpeg" alt="4" />
+          </div>
+          <div class="slider-item">
+            <img src="./Images/IMG-CHINA-3.jpeg" alt="5" />
+          </div>
         </div>
       </section>
     </main>
@@ -64,6 +100,9 @@
       <h2></h2>
     </footer>
 
-    <script src="./index.js"></script>
+    <!-- JavaScript -->
+    <script src="./JS/index.js"></script>
+    <!-- Slick JS -->
+    <script src="./JS/slick.min.js"></script>
   </body>
 </html>
