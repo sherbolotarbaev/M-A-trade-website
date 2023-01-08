@@ -110,7 +110,7 @@ button:hover {
   left: 0;
   width: 40px;
   height: 40px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@ button:hover {
   content: "";
   width: 15px;
   height: 15px;
-  border: 3px solid rgb(58, 58, 58);
+  border: 3px solid rgb(255, 0, 0);
   border-radius: 50%;
   transform: translate(-2px, -2px);
 }
@@ -134,7 +134,7 @@ button:hover {
   content: "";
   width: 3px;
   height: 10px;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(255, 0, 0);
   transform: translate(8px, 8px) rotate(-45deg);
 }
 
@@ -223,7 +223,7 @@ button:hover {
 .home-title h2 {
   font-size: 90px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900px;
+  font-weight: 900;
 }
 
 span {
@@ -274,4 +274,72 @@ span {
   width: 1500px;
   height: 550px;
   padding-right: 90px;
+}
+
+/* Logistic Page */
+
+.logistic-page {
+  min-height: 100vh;
+  background: url(../Images/Logistic-Backround.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.logistic-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.logistic-card {
+  width: 300px;
+  height: 400px;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.654);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Logistic-button {
+  margin: 50px;
+  width: 190px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #fff;
+  color: rgb(18, 18, 18);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-transform: none;
+}
+
+.Logistic-button:hover {
+  border: 1px solid white;
+}
+
+.logistic-title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.logistic-title p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
 }
