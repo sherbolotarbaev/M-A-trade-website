@@ -330,7 +330,8 @@ span {
 }
 
 .logistic-title h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 30px;
   color: #fff;
   padding-bottom: 15px;
