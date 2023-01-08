@@ -34,12 +34,13 @@ $(document).ready(function () {
     fade: true,
     cssEase: "linear",
 
-    // responsive: [
-    //   {
-    //     breakpoint: 750,
-    //     settings: {
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   });
 });
