@@ -135,6 +135,12 @@
     padding-right: 50px;
   }
 
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
   /* About Page */
   .about-title h2 {
     font-size: 28px;

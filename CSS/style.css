@@ -124,7 +124,7 @@ button:hover {
   content: "";
   width: 15px;
   height: 15px;
-  border: 3px solid rgb(255, 0, 0);
+  border: 3px solid rgb(16, 16, 16);
   border-radius: 50%;
   transform: translate(-2px, -2px);
 }
@@ -134,7 +134,7 @@ button:hover {
   content: "";
   width: 3px;
   height: 10px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(16, 16, 16);
   transform: translate(8px, 8px) rotate(-45deg);
 }
 
@@ -267,13 +267,12 @@ span {
 
 /* Slider */
 .slider {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .slider-item img {
-  width: 1500px;
-  height: 550px;
-  padding-right: 90px;
+  width: 900px;
+  height: 450px;
 }
 
 /* Logistic Page */
@@ -310,6 +309,14 @@ span {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: 0.5s;
+}
+
+.logistic-card:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.383);
+  border: 1px solid rgb(255, 255, 255);
+  margin: 1.5rem;
 }
 
 .Logistic-button {
@@ -331,7 +338,7 @@ span {
 
 .logistic-title h2 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 30px;
   color: #fff;
   padding-bottom: 15px;
@@ -339,8 +346,27 @@ span {
 }
 
 .logistic-title p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 12px;
   color: #fff;
+  text-align: center;
+}
+
+.price-logistic {
+  width: 100%;
+  height: 50px;
+  margin: 50px;
+  background-color: rgb(255, 200, 0);
+  transition: 0.5s;
+}
+
+.price-logistic:hover {
+  background-color: #fff;
+}
+
+.price-logistic h2 {
+  font-size: 25px;
+  color: rgb(21, 21, 21);
   text-align: center;
 }
