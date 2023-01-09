@@ -92,12 +92,6 @@
     margin-top: 90px;
   }
 
-  /* Slider */
-  .slider-item img {
-    width: 900px;
-    height: 550px;
-    padding-right: 50px;
-  }
 }
 
 @media (max-width: 750px) {
@@ -152,4 +146,13 @@
     width: 100%;
     font-size: 12px;
   }
+
+  .card-title h2 {
+    font-size: 25px;
+  }
+
+  .card-title p {
+    font-size: 17px;
+  }
+
 }
