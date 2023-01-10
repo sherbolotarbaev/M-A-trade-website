@@ -12,6 +12,7 @@
     width: 50px;
     height: 45px;
     position: relative;
+    top: 5px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -48,11 +49,14 @@
 
   #nav-icon3 span:nth-child(2),
   #nav-icon3 span:nth-child(3) {
-    top: 15px;
+    top: 13px;
+    width: 90%;
+    left: 13px;
+    background: rgb(255, 21, 21);
   }
 
   #nav-icon3 span:nth-child(4) {
-    top: 30px;
+    top: 26px;
   }
 
   #nav-icon3.open span:nth-child(1) {
@@ -79,13 +83,6 @@
     top: 18px;
     width: 0%;
     left: 50%;
-  }
-
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 6px 0;
   }
 
   /* Navbar */
