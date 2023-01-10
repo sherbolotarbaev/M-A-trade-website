@@ -6,6 +6,11 @@ hamburger.onclick = function () {
   navBar.classList.toggle("active");
 };
 
+$(document).ready(function () {
+  $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
+    $(this).toggleClass("open");
+  });
+});
 // search
 const icon = document.querySelector(".icon");
 const search = document.querySelector(".search");
