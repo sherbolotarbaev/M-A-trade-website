@@ -1,543 +1,556 @@
 @import url(../CSS/media.css);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 *,
 ::before,
 ::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth;
-  min-height: 100%;
+	scroll-behavior: smooth;
+	min-height: 100%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgb(255, 255, 255);
-  min-height: 100%;
+	font-family: "Montserrat", sans-serif;
+	background-color: rgb(255, 255, 255);
+	min-height: 100%;
 }
 
 .big-wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
 /* Navbar section */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  padding: 30px 8%;
-  width: 100vw;
-  height: 85px;
-  background-color: rgba(14, 27, 33, 0.79);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.228);
-  backdrop-filter: blur(9.7px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 30px 8%;
+	width: 100vw;
+	height: 85px;
+	background-color: rgba(14, 27, 33, 0.79);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.228);
+	backdrop-filter: blur(9.7px);
 }
 
 .hamburger {
-  display: none;
+	display: none;
 }
 
 .nav-links,
 li,
 a {
-  color: #fff;
-  text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
+	display: flex;
+	list-style: none;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0 20px;
+	display: inline-block;
+	padding: 0 20px;
 }
 
 .nav-links li a {
-  display: block;
-  transition: all 0.3s ease 0s;
+	display: block;
+	transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover {
-  color: rgb(255, 37, 17);
+	color: rgb(255, 37, 17);
 }
 
 button {
-  padding: 10px 25px;
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-  background-color: rgb(85, 77, 240);
-  box-shadow: 0 0 10px rgb(83, 76, 218);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+	padding: 10px 25px;
+	letter-spacing: 1.5px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	background-color: rgb(85, 77, 240);
+	box-shadow: 0 0 10px rgb(83, 76, 218);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
 }
 
 button:hover {
-  background-color: transparent;
-  border: 1px solid rgb(0, 170, 255);
-  color: #fff;
+	background-color: transparent;
+	border: 1px solid rgb(0, 170, 255);
+	color: #fff;
 }
 
 /* Search */
 .search-navbar {
-  display: none;
+	display: none;
 }
 
 .search {
-  position: relative;
-  margin: 10px;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  background-color: #fff;
-  outline: 0;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.379);
-  border-radius: 60px;
-  transition: .5s;
+	position: relative;
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	background-color: #fff;
+	outline: 0;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.379);
+	border-radius: 60px;
+	transition: 0.5s;
 }
 
 .search .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+	cursor: pointer;
 }
 
 .search .icon::before {
-  position: absolute;
-  content: "";
-  width: 15px;
-  height: 15px;
-  border: 3px solid rgb(16, 16, 16);
-  border-radius: 50%;
-  transform: translate(-2px, -2px);
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border: 3px solid rgb(16, 16, 16);
+	border-radius: 50%;
+	transform: translate(-2px, -2px);
 }
 
 .search .icon::after {
-  position: absolute;
-  content: "";
-  width: 3px;
-  height: 10px;
-  background-color: rgb(16, 16, 16);
-  transform: translate(8px, 8px) rotate(-45deg);
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 10px;
+	background-color: rgb(16, 16, 16);
+	transform: translate(8px, 8px) rotate(-45deg);
 }
 
 .search.active {
-  width: 330px;
+	width: 330px;
 }
 
 .search .input {
-  position: relative;
-  width: 300px;
-  height: 40px;
-  left: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	width: 300px;
+	height: 40px;
+	left: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .search .input input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  border: 0;
-  outline: 0;
-  font-size: 18px;
-  color: rgb(255, 8, 8);
-  padding: 10px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	color: rgb(255, 8, 8);
+	padding: 10px 0;
 }
 
 .search .input input::placeholder {
-  color: rgba(16, 16, 16, 0.301);
+	color: rgba(16, 16, 16, 0.301);
 }
 
 .search .clear {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .clear::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 15px;
-  background-color: rgba(33, 33, 33, 0.589);
-  transform: rotate(45deg);
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 15px;
+	background-color: rgba(33, 33, 33, 0.589);
+	transform: rotate(45deg);
 }
 
 .clear::after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 15px;
-  background-color: rgba(33, 33, 33, 0.589);
-  transform: rotate(-45deg);
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 15px;
+	background-color: rgba(33, 33, 33, 0.589);
+	transform: rotate(-45deg);
 }
 
 /* Home-Page section */
 .home-page {
-  background-color: #fff;
-  min-height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.6rem 3rem;
+	background-color: #fff;
+	min-height: 100vh;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem 3rem;
 }
 
 .home-objects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .home-title {
-  margin: 2rem 0 0 4rem;
+	margin: 2rem 0 0 4rem;
 }
 
 .home-title h2 {
-  font-size: 90px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+	font-size: 90px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
 }
 
 span {
-  color: rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
 }
 
 .home-img {
-  margin-top: 180px;
+	margin-top: 180px;
 }
 
 .home-img img {
-  width: 500px;
+	width: 500px;
 }
 
 /* About section */
 .about-page {
-  min-height: 100vh;
-  padding: 0 3rem 5rem 3rem;
-  background: linear-gradient(-45deg, #9900ff, #101019, #101019, rgb(255, 0, 0));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+	min-height: 100vh;
+	padding: 0 3rem 5rem 3rem;
+	background: linear-gradient(
+		-45deg,
+		#9900ff,
+		#101019,
+		#101019,
+		rgb(255, 0, 0)
+	);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
 
-  50% {
-    background-position: 100% 50%;
-  }
+	50% {
+		background-position: 100% 50%;
+	}
 
-  100% {
-    background-position: 0% 50%;
-  }
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .about-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 100px;
 }
 
 .about-title h2 {
-  font-size: 28px;
-  letter-spacing: 1px;
-  padding-bottom: 30px;
-  color: rgb(255, 0, 0);
+	font-size: 28px;
+	letter-spacing: 1px;
+	padding-bottom: 30px;
+	color: rgb(255, 0, 0);
 }
 
 .about-title p {
-  width: 90%;
-  font-size: 19px;
-  font-weight: 500;
-  color: #fafaff;
+	width: 90%;
+	font-size: 19px;
+	font-weight: 500;
+	color: #fafaff;
 }
 
 /* Slider */
 .slider {
-  margin-top: 90px;
+	margin-top: 90px;
 }
 
 .slider-item img {
-  max-width: 100%;
-  height: 450px;
+	margin: 0 auto;
+	max-width: 100%;
+	height: 450px;
 }
 
 /* About cards */
 .about-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  min-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	min-width: 300px;
 }
 
 .about-card {
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
 }
 
 .card-svg {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 30px;
-  background: url(../Images/security-verified-solid-svgrepo-com.svg) 0 0 / 100%;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 30px;
+	background: url(../Images/security-verified-solid-svgrepo-com.svg) 0 0 / 100%;
 }
 
 .two-Example {
-  background: url(../Images/speed-alt-svgrepo-com.svg) 0 0 / 100%;
+	background: url(../Images/speed-alt-svgrepo-com.svg) 0 0 / 100%;
 }
 
 #yearsCard {
-  width: 100%;
+	width: 100%;
 }
 
 .numberCard {
-  color: #fff;
-  font-size: 130px;
-  font-weight: 800;
+	color: #fff;
+	font-size: 130px;
+	font-weight: 800;
 }
 
 .card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .card-title h2 {
-  color: #fff;
-  font-size: 45px;
-  margin-bottom: 15px;
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 15px;
 }
 
 .card-title p {
-  color: #fff;
-  font-size: 20px;
-  width: 80%;
+	color: #fff;
+	font-size: 20px;
+	width: 80%;
 }
 
 /* Logistic Page */
 
 .logistic-page {
-  min-height: 100vh;
-  background: url(../Images/Logistic-Backround.png) no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+	min-height: 100vh;
+	background: url(../Images/Logistic-Backround.webp) no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 .logistic-cards {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 2rem;
 }
 
 .logistic-card {
-  width: 300px;
-  height: 400px;
-  margin: 1rem;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10.5px);
-  -webkit-backdrop-filter: blur(10.5px);
-  border: 1px solid rgba(255, 255, 255, 0.654);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: 0.5s;
+	width: 300px;
+	height: 400px;
+	margin: 1rem;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 8px;
+	box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10.5px);
+	-webkit-backdrop-filter: blur(10.5px);
+	border: 1px solid rgba(255, 255, 255, 0.654);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: 0.5s;
 }
 
 .logistic-card:hover {
-  transform: scale(1.10);
-  box-shadow: 0 0 45px rgba(255, 255, 255, 0.383);
-  border: 1px solid rgb(255, 255, 255);
-  margin: 1.5rem;
+	transform: scale(1.1);
+	box-shadow: 0 0 45px rgba(255, 255, 255, 0.383);
+	border: 1px solid rgb(255, 255, 255);
+	margin: 1.5rem;
 }
 
 .Logistic-button {
-  margin: 50px;
-  width: 220px;
-  background-color: #fff;
-  box-shadow: 0 0 5px #fff;
-  color: rgb(18, 18, 18);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0;
-  text-align: center;
-  text-transform: none;
+	margin: 50px;
+	width: 220px;
+	background-color: #fff;
+	box-shadow: 0 0 5px #fff;
+	color: rgb(18, 18, 18);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: none;
 }
 
 .Logistic-button:hover {
-  border: 1px solid white;
+	border: 1px solid white;
 }
 
 .logistic-title h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  color: #fff;
-  padding-bottom: 15px;
-  text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 30px;
+	color: #fff;
+	padding-bottom: 15px;
+	text-align: center;
 }
 
 .logistic-title p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
 }
 
 .price-logistic {
-  width: 100%;
-  height: 50px;
-  margin: 50px;
-  background-color: rgb(208, 255, 0);
-  transition: 0.5s;
+	width: 100%;
+	height: 50px;
+	margin: 50px;
+	background-color: rgb(208, 255, 0);
+	transition: 0.5s;
 }
 
 .price-logistic:hover {
-  background-color: rgb(162, 255, 0);
+	background-color: rgb(162, 255, 0);
 }
 
 .price-logistic h2 {
-  font-size: 25px;
-  color: rgb(21, 21, 21);
-  text-align: center;
+	font-size: 25px;
+	color: rgb(21, 21, 21);
+	text-align: center;
 }
 
 /* Products Page */
 
 .products-page {
-  min-height: 100vh;
-  background: url(../Images/Products-Page.png) no-repeat;
-  background-position: center;
-  background-size: cover;
+	min-height: 100vh;
+	background: url(../Images/Products-Page.webp) no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .products-title {
-  padding-top: 100px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	padding-top: 100px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .products-title h2 {
-  font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: 9px;
-  color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	color: #fff;
 }
 
 /* Footer */
 footer {
-  max-width: 100%;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(-45deg, #420080, #12181f, rgb(85, 76, 255), #000000);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+	max-width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		-45deg,
+		#420080,
+		#12181f,
+		rgb(85, 76, 255),
+		#000000
+	);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
 
-  50% {
-    background-position: 100% 50%;
-  }
+	50% {
+		background-position: 100% 50%;
+	}
 
-  100% {
-    background-position: 0% 50%;
-  }
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .footer-title {
-  margin: 10px;
+	margin: 10px;
 }
 
 .footer-title p {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-  color: #fff;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	color: #fff;
 }
 
 .social-media {
-  padding: 20px;
+	padding: 20px;
 }
 
 .social-media a {
-  font-size: 30px;
-  margin: 20px 20px;
-  transition: 0.5s;
+	font-size: 30px;
+	margin: 20px 20px;
+	transition: 0.5s;
 }
 
 .social-media a:hover {
-  color: rgb(255, 0, 0);
-  text-shadow: 0 0 40px rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
+	text-shadow: 0 0 40px rgb(255, 0, 0);
 }
