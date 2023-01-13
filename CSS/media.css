@@ -1,5 +1,6 @@
 /* Medai qurey section */
 @media only screen and (max-width: 1000px) {
+
 	/* Burger menu */
 	.hamburger {
 		display: block;
@@ -148,6 +149,7 @@
 }
 
 @media (min-width: 750px) and (max-width: 1000px) {
+
 	/* Home Page */
 	.home-objects {
 		display: flex;
@@ -163,6 +165,7 @@
 }
 
 @media (max-width: 750px) {
+
 	/* Home Page */
 	.home-title {
 		margin: 6rem 0px;
@@ -220,4 +223,38 @@
 	.card-title p {
 		font-size: 17px;
 	}
+
+	/* Products page */
+	.products-title h2 {
+		font-size: 18px;
+	}
+
+	/* Footer */
+	footer {
+		height: 500px;
+	}
+
+	.footer-title h3 {
+		font-size: 16px;
+	}
+
+	.footer-title p {
+		font-size: 14px;
+		padding-top: 26px;
+		width: 88%;
+	}
+
+	.social-media {
+		padding-top: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.social-media a {
+		font-size: 30px;
+		margin: 0 1.3rem;
+		transition: 0.5s;
+	}
+
 }

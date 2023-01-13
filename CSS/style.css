@@ -498,12 +498,13 @@ span {
 
 /* Footer */
 footer {
-	max-width: 100%;
+	width: 100%;
 	height: 300px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #161616;
+}
+
+.footer-content {
+	padding-top: 80px;
 }
 
 .footer-title {
