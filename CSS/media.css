@@ -85,6 +85,11 @@
 	}
 
 	/* Navbar */
+	.small-warpper h2 {
+		font-size: 12px;
+		padding: 12px;
+	}
+
 	.navbar {
 		height: 0;
 		position: absolute;
