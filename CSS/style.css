@@ -17,7 +17,7 @@ html {
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: rgb(255, 255, 255);
+	background-color: #fff;
 	min-height: 100%;
 }
 
@@ -214,10 +214,11 @@ button:hover {
 
 /* Home-Page section */
 .home-page {
-	background-color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, 0.442), rgb(26, 26, 26)), url(../Images/home-image.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	min-height: 100vh;
-	max-width: 1200px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -237,7 +238,9 @@ button:hover {
 .home-title h2 {
 	font-size: 90px;
 	font-family: "Montserrat", sans-serif;
+	letter-spacing: 1px;
 	font-weight: 900;
+	color: #fff;
 }
 
 span {
@@ -260,8 +263,8 @@ span {
 			#9900ff,
 			#24242f,
 			#13131c,
-			rgb(255, 0, 0));
-	background-size: 500% 400%;
+			rgb(17, 156, 255));
+	background-size: 400% 400%;
 	animation: gradient 16s ease infinite;
 }
 
