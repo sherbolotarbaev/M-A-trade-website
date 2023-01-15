@@ -21,6 +21,24 @@ body {
 	min-height: 100%;
 }
 
+.small-warpper {
+	width: 100vw;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgb(255, 213, 0);
+}
+
+.small-warpper h2 {
+	font-size: 18px;
+	font-weight: 800;
+	text-align: center;
+	color: #111111;
+	padding: 8px;
+}
+
 .big-wrapper {
 	min-height: 100%;
 	display: flex;
@@ -37,7 +55,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	top: 0;
+	top: 40px;
 	left: 0;
 	z-index: 999;
 	padding: 30px 8%;
