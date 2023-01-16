@@ -21,24 +21,6 @@ body {
 	min-height: 100%;
 }
 
-.small-warpper {
-	width: 100vw;
-	height: 40px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	background-color: rgb(255, 213, 0);
-}
-
-.small-warpper h2 {
-	font-size: 18px;
-	font-weight: 800;
-	text-align: center;
-	color: #111111;
-	padding: 8px;
-}
-
 .big-wrapper {
 	min-height: 100%;
 	display: flex;
@@ -54,16 +36,20 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
-	top: 40px;
-	left: 0;
-	z-index: 999;
 	padding: 30px 8%;
 	width: 100vw;
 	height: 85px;
-	background-color: rgba(14, 27, 33, 0.79);
-	border-bottom: 2px solid rgba(255, 255, 255, 0.228);
+	background-color: rgb(11, 19, 23);
+}
+
+header.fixed {
+	background-color: rgba(14, 27, 33, 0.586);
 	backdrop-filter: blur(9.7px);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.228);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
 }
 
 .hamburger {
@@ -341,6 +327,7 @@ span {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	overflow: hidden;
 	margin-top: 100px;
 	min-width: 300px;
 }
@@ -403,6 +390,7 @@ span {
 	background: url(../Images/Logistic-Backround.webp);
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -430,7 +418,34 @@ span {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	transition: 0.5s;
+	transition: 0.9s;
+}
+
+.scroll-item {
+	transform: translateY(120%);
+	opacity: 0;
+	transition: 0.7s;
+}
+
+.scroll-item.animation:nth-child(1) {
+	transition-delay: 0.1s;
+}
+
+.scroll-item.animation:nth-child(2) {
+	transition-delay: 0.3s;
+}
+
+.scroll-item.animation:nth-child(3) {
+	transition-delay: 0.5s;
+}
+
+.scroll-item.animation:nth-child(4) {
+	transition-delay: 0.7s;
+}
+
+.scroll-item.animation {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .logistic-card:hover {
