@@ -226,6 +226,32 @@
 		font-size: 17px;
 	}
 
+	/* Logistic Page */
+
+	.logistic-page {
+		background: linear-gradient(rgba(255, 38, 0, 0.328), rgba(17, 25, 42, 0.665)), url(../Images/Logistic-image.webp);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logistic-content {
+		padding-bottom: 26px;
+	}
+
+	.logistic-card-icon {
+		width: 230px;
+	}
+
+	.Logistic-button {
+		background-color: rgb(29, 100, 255);
+	}
+
+	.Logistic-button:hover {
+		background-color: transparent;
+		border: 1px solid white;
+	}
+
 	/* Products page */
 	.products-title h2 {
 		font-size: 18px;

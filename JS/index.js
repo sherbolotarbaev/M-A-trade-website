@@ -111,21 +111,6 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", () => {
   const homePage = document.querySelector(".home-page");
   const header = document.querySelector(".header");
-  const scrollItems = document.querySelectorAll(".scroll-item");
-
-  const homeImgAnimation = () => {
-    let windowCenter = window.innerHeight / 2 + window.scrollY;
-    console.log(windowCenter);
-
-    scrollItems.forEach((el) => {
-      let scrollOffset = el.offsetTop + el.offsetHeight / 8;
-      if (windowCenter >= scrollOffset) {
-        el.classList.add("animation");
-      } else {
-        el.classList.remove("animation");
-      }
-    });
-  };
 
   const headerFixed = () => {
     let scrollTop = window.scrollY;
@@ -141,9 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   headerFixed();
-  homeImgAnimation();
   window.addEventListener("scroll", () => {
     headerFixed();
-    homeImgAnimation();
   });
 });
