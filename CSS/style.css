@@ -39,11 +39,11 @@ header {
 	padding: 30px 8%;
 	width: 100vw;
 	height: 85px;
-	background-color: rgb(11, 19, 23);
+	background-color: rgb(16, 25, 29);
 }
 
 header.fixed {
-	background-color: rgba(14, 27, 33, 0.586);
+	background-color: rgba(13, 23, 35, 0.586);
 	backdrop-filter: blur(9.7px);
 	border-bottom: 2px solid rgba(255, 255, 255, 0.228);
 	position: fixed;
@@ -263,27 +263,7 @@ span {
 .about-page {
 	min-height: 100vh;
 	padding: 0 3rem 5rem 3rem;
-	background: linear-gradient(-45deg,
-			#9900ff,
-			#24242f,
-			#13131c,
-			rgb(17, 156, 255));
-	background-size: 400% 400%;
-	animation: gradient 16s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
+	background: linear-gradient(rgb(17, 29, 40), rgb(111, 0, 255));
 }
 
 .about-title {
@@ -296,6 +276,7 @@ span {
 
 .about-title h2 {
 	font-size: 28px;
+	font-weight: 700;
 	letter-spacing: 1px;
 	padding-bottom: 30px;
 	color: rgb(255, 0, 0);
@@ -304,10 +285,10 @@ span {
 .about-title p {
 	width: 90%;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1.9rem;
 	letter-spacing: 0.8px;
-	color: #fafaff;
+	color: #ffffff;
 }
 
 /* Slider */
@@ -348,6 +329,7 @@ span {
 	height: 100px;
 	margin-bottom: 30px;
 	background: url(../Images/security-verified-solid-svgrepo-com.svg) 0 0 / 100%;
+	color: #161616;
 }
 
 .two-Example {
@@ -387,9 +369,7 @@ span {
 
 .logistic-page {
 	min-height: 100vh;
-	background: url(../Images/Image-illustration.png);
-	background-position: center;
-	background-size: cover;
+	background: rgb(255, 255, 255);
 	overflow: hidden;
 	display: flex;
 	align-content: center;
@@ -407,7 +387,7 @@ span {
 
 .logistic-card {
 	width: 300px;
-	background: rgba(11, 16, 32, 0.401);
+	background: linear-gradient(rgba(7, 18, 31, 0.918), rgb(14, 17, 30));
 	border-radius: 9px;
 	box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(10.5px);
@@ -417,7 +397,7 @@ span {
 }
 
 .logistic-card:hover {
-	transform: scale(1.1);
+	transform: scale(1.07);
 	box-shadow: 0 0 45px rgba(255, 255, 255, 0.593);
 	border: 1px solid rgb(255, 255, 255);
 	margin: 1.5rem;
@@ -428,7 +408,7 @@ span {
 	flex-direction: column;
 	align-items: center;
 	flex-grow: 1;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 .logistic-card-icon {
@@ -443,9 +423,9 @@ span {
 .Logistic-button {
 	width: 220px;
 	margin-top: 10px;
-	background-color: rgb(14, 22, 39);
+	background-color: rgb(232, 232, 232);
 	box-shadow: none;
-	color: rgb(255, 255, 255);
+	color: rgb(18, 18, 18);
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
@@ -481,14 +461,14 @@ span {
 
 .price-logistic {
 	width: 100%;
-	background-color: rgb(255, 242, 121);
+	background-color: rgb(255, 24, 24);
 }
 
 .price-logistic h2 {
 	padding: 5px;
 	font-size: 28px;
 	font-weight: 600;
-	color: rgb(32, 32, 40);
+	color: rgb(255, 255, 255);
 	text-align: center;
 }
 
