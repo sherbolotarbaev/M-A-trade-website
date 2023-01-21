@@ -28,6 +28,10 @@ body {
 
 .contacts-page {
   min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../Images/Chinarown.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -51,7 +55,9 @@ body {
 .contacts-title h2 {
   font-size: 28px;
   text-transform: uppercase;
+  letter-spacing: 4px;
   color: rgb(255, 0, 0);
+  text-shadow: 0 0 20px red;
 }
 
 .content-social-media {
@@ -71,4 +77,8 @@ body {
   text-transform: inherit;
   margin-top: 1.3rem;
   transition: 0.5s;
+}
+
+.content-social-media a:hover {
+  background-color: rgb(225, 0, 0);
 }
