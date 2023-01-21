@@ -28,7 +28,7 @@ body {
 
 .contacts-page {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../Images/Chinarown.jpeg);
+  background: linear-gradient(rgba(21, 105, 216, 0.664), rgba(18, 17, 17, 0.929)), url(../Images/Chinarown.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,8 +56,30 @@ body {
   font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: rgb(255, 0, 0);
-  text-shadow: 0 0 20px red;
+  color: rgb(255, 255, 255);
+  animation: title-anim 5s infinite;
+}
+
+@keyframes title-anim {
+  0% {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0);
+  }
+
+  25% {
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+
+  50% {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0);
+  }
+
+  75% {
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+
+  100% {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0);
+  }
 }
 
 .content-social-media {
@@ -68,6 +90,7 @@ body {
 
 .content-social-media a {
   text-align: center;
+  cursor: pointer;
   width: 100%;
   padding: 20px 20px;
   background-color: rgb(9, 23, 43);
