@@ -100,6 +100,7 @@ $(document).ready(function () {
         breakpoint: 750,
         settings: {
           dots: false,
+          arrows: true,
         },
       },
     ],

@@ -18,7 +18,7 @@
 /* Arrows */
 .slider .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 60%;
     z-index: 90;
     font-size: 0;
     width: 30px;
@@ -26,13 +26,15 @@
 }
 
 .slider .slick-arrow.slick-prev {
-    left: -25px;
+    left: 10px;
     background: url("../Images/caret-left-svgrepo-com.svg") 0 0 / 100% no-repeat;
+    box-shadow: none;
 }
 
 .slider .slick-arrow.slick-next {
-    right: 0;
+    right: 10px;
     background: url("../Images/caret-right-svgrepo-com.svg") 0 0 / 100% no-repeat;
+    box-shadow: none;
 }
 
 /* Dots */
