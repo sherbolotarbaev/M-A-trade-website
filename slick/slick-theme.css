@@ -37,6 +37,14 @@
     box-shadow: none;
 }
 
+.slider .slick-arrow.slick-prev:focus {
+    border: none;
+}
+
+.slider .slick-arrow.slick-next:focus {
+    border: none;
+}
+
 /* Dots */
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
