@@ -296,11 +296,6 @@ span {
 	color: #ffffff;
 }
 
-.span-p {
-	color: rgb(255, 255, 255);
-	font-weight: 500;
-}
-
 /* Slider */
 .slider {
 	padding-top: 90px;
@@ -392,7 +387,7 @@ span {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	margin: 2rem;
+	margin: 5rem 3rem;
 }
 
 .logistic-card {
@@ -434,10 +429,6 @@ span {
 	100% {
 		margin-left: -1600px;
 	}
-}
-
-.endWave {
-	display: none;
 }
 
 .logistic-card:hover {
@@ -519,20 +510,21 @@ span {
 
 .logistic-text {
 	padding: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	flex-direction: column;
 }
 
 .logistic-text h2 {
+	text-align: center;
+	text-transform: uppercase;
 	color: rgb(26, 43, 70);
 	padding-bottom: 20px;
 }
 
-
 .logistic-text p {
 	font-size: 19px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	padding-bottom: 40px;
 }
 
 /* Products Page */
