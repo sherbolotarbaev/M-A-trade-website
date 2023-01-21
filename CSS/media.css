@@ -233,6 +233,18 @@
 		width: 230px;
 	}
 
+	.logistic-text {
+		padding: 30px;
+	}
+
+	.logistic-text h2 {
+		font-size: 29px;
+	}
+
+	.logistic-text p {
+		font-size: 15px;
+	}
+
 	/* Products page */
 	.products-title h2 {
 		font-size: 18px;
