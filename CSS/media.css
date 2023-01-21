@@ -266,4 +266,10 @@
 		transition: 0.5s;
 	}
 
+	/* Contacts Page */
+
+	.content-social-media a {
+		padding: 20px 20px;
+		font-size: 16px;
+	}
 }

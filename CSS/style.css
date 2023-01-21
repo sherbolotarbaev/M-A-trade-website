@@ -251,6 +251,12 @@ span {
 	color: rgb(255, 0, 0);
 }
 
+.span-p {
+	text-align: center;
+	color: rgb(25, 255, 197);
+	font-weight: 400;
+}
+
 .home-img {
 	margin-top: 180px;
 }
