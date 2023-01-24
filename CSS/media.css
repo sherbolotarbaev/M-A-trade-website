@@ -253,7 +253,14 @@
 
 	/* Footer */
 	footer {
-		height: 430px;
+		flex-wrap: wrap;
+		padding: 10px 10% 40px 10%;
+	}
+
+	.footer-logo {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 30px;
 	}
 
 	.footer-title h3 {
@@ -261,22 +268,21 @@
 	}
 
 	.footer-title p {
-		font-size: 14px;
-		padding-top: 26px;
-		width: 88%;
+		font-size: 12px;
+		width: 100%;
 	}
 
 	.social-media {
 		padding-top: 45px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		padding-left: 0;
 	}
 
 	.social-media a {
-		font-size: 30px;
-		margin: 0 1.3rem;
-		transition: 0.5s;
+		font-size: 35px;
+	}
+
+	.contacts-text {
+		padding-left: 0;
 	}
 
 	/* Contacts Page */
