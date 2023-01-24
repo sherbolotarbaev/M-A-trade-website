@@ -79,11 +79,23 @@ a {
 
 .nav-links li a {
 	display: block;
-	transition: all 0.3s ease 0s;
+	position: relative;
 }
 
-.nav-links li a:hover {
-	color: rgb(255, 0, 0);
+.nav-links li a::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -34px;
+	left: 0;
+	background-color: red;
+	transition: width 0.6s;
+}
+
+.nav-links li a:hover::after {
+	width: 100%;
 }
 
 button {
@@ -329,6 +341,17 @@ span {
 	text-align: center;
 }
 
+.anim {
+	opacity: 0;
+	transition: opacity 0.9s, transform 0.9s;
+	transform: translateY(120px);
+}
+
+.anim.element-show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 .card-svg {
 	width: 100px;
 	height: 100px;
@@ -406,14 +429,14 @@ span {
 
 .logistic-card:after {
 	content: "";
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg) repeat-x;
+	background: url(../Images/wavePurple.svg) repeat-x;
 	position: absolute;
 	bottom: -10px;
 	width: 6400px;
 	height: 198px;
 	z-index: -1;
-	opacity: 1;
-	animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+	opacity: 0.1;
+	animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 	transform: translate3d(0, 0, 0);
 }
 
