@@ -100,21 +100,28 @@ a {
 
 /* BUTTONS */
 .cta {
-	padding: 13px 15px;
-	font-size: 23px;
+	display: none;
+}
+
+.cta2 {
+	display: block;
+	padding: 10px 25px;
+	font-size: 13px;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
 	color: #fff;
 	background-color: rgb(85, 77, 240);
 	box-shadow: 0 0 10px rgb(83, 76, 218);
 	border: none;
-	border-radius: 50%;
+	border-radius: 60px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
-	position: relative;
 }
 
-.cta:hover {
+.cta2:hover {
+	border: 2px solid rgb(85, 77, 240);
+	box-shadow: none;
 	background-color: transparent;
-	border: 1px solid rgb(0, 170, 255);
 	color: #fff;
 }
 
@@ -123,11 +130,11 @@ button {
 	border-radius: 50px;
 	cursor: pointer;
 	padding: 10px 25px;
+	transition: all 0.3s ease 0s;
 }
 
 button:hover {
 	background-color: transparent;
-	border: 1px solid rgb(0, 170, 255);
 	color: #fff;
 }
 
