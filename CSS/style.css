@@ -98,18 +98,31 @@ a {
 	width: 100%;
 }
 
-button {
-	padding: 10px 25px;
-	letter-spacing: 1.5px;
-	font-size: 15px;
-	font-weight: 700;
+/* BUTTONS */
+.cta {
+	padding: 13px 15px;
+	font-size: 23px;
 	color: #fff;
 	background-color: rgb(85, 77, 240);
 	box-shadow: 0 0 10px rgb(83, 76, 218);
 	border: none;
-	border-radius: 50px;
+	border-radius: 50%;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
+	position: relative;
+}
+
+.cta:hover {
+	background-color: transparent;
+	border: 1px solid rgb(0, 170, 255);
+	color: #fff;
+}
+
+button {
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	padding: 10px 25px;
 }
 
 button:hover {
@@ -297,6 +310,15 @@ span {
 	letter-spacing: 1px;
 	padding-bottom: 30px;
 	color: rgb(255, 0, 0);
+}
+
+.about-title h3 {
+	font-size: 23px;
+	font-weight: 700;
+	padding-bottom: 20px;
+	padding-top: 50px;
+	letter-spacing: 0.9px;
+	color: rgb(255, 11, 11);
 }
 
 .about-title p {

@@ -130,11 +130,57 @@
 	.cta {
 		position: fixed;
 		top: 500px;
-		right: 15px;
+		right: 16px;
 	}
 
-	button:hover {
+	.cta::after {
+		content: '';
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		border: 3px solid rgb(85, 77, 240);
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: ring 1.5s infinite;
+	}
+
+	.cta::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		border: 3px solid rgb(85, 77, 240);
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: ring 2.8s infinite;
+	}
+
+	.cta {
+		font-size: 40px;
+	}
+
+	.cta:hover {
 		background-color: rgb(0, 27, 58);
+	}
+
+	@keyframes ring {
+		0% {
+			width: 25px;
+			height: 10px;
+			opacity: 1;
+		}
+
+		100% {
+			width: 130px;
+			height: 130px;
+			opacity: 0;
+		}
 	}
 
 	/* Home Page */
@@ -243,6 +289,10 @@
 
 	.logistic-text p {
 		font-size: 15px;
+	}
+
+	.logistic-cards {
+		margin: 5rem 1rem;
 	}
 
 	/* Products page */
