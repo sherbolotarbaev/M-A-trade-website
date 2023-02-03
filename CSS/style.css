@@ -211,6 +211,10 @@ button:hover {
 	padding: 10px 20px 10px 0;
 }
 
+.search .input input::placeholder {
+	color: rgba(255, 255, 255, 0.517);
+}
+
 .search .input input:focus::placeholder {
 	color: #ffffff0f;
 }
