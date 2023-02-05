@@ -309,9 +309,19 @@
 	}
 
 	/* Products page */
+	.products-page {
+		min-height: 80vh;
+		background-color: #fff;
+	}
+
 	.products-title h2 {
 		font-size: 22px;
 		text-align: center;
+	}
+
+	.product-video {
+		padding-top: 80px;
+		width: 350px;
 	}
 
 	/* Footer */

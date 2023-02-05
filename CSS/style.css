@@ -595,6 +595,24 @@ span {
 	color: rgb(16, 22, 28);
 }
 
+.products-content {
+
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.product-video {
+	width: 900px;
+}
+
+.product-video video {
+	width: 100%;
+	height: 100%;
+}
+
 /* Footer */
 footer {
 	width: 100vw;
