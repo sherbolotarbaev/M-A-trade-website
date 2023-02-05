@@ -252,7 +252,7 @@ button:hover {
 
 /* Home-Page section */
 .home-page {
-	background: linear-gradient(rgba(0, 0, 0, 0.442), rgb(26, 26, 26)), url(../Images/home-image.jpeg);
+	background: linear-gradient(rgba(15, 23, 37, 0.739), rgba(255, 0, 0, 0.222)), url(../Images/home-image.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -298,7 +298,7 @@ span {
 .about-page {
 	min-height: 100vh;
 	padding: 0 3rem 5rem 3rem;
-	background: linear-gradient(rgb(13, 24, 33), rgb(149, 0, 255));
+	background: #141a25;
 }
 
 .about-title {
@@ -322,8 +322,8 @@ span {
 	font-weight: 700;
 	padding-bottom: 20px;
 	padding-top: 50px;
-	letter-spacing: 0.9px;
-	color: rgb(255, 11, 11);
+	letter-spacing: 1px;
+	color: rgb(255, 5, 5);
 }
 
 .about-title p {
@@ -424,7 +424,6 @@ span {
 
 .logistic-page {
 	min-height: 100vh;
-	background: rgb(255, 255, 255);
 	overflow: hidden;
 	display: flex;
 	align-content: center;
@@ -443,8 +442,7 @@ span {
 .logistic-card {
 	width: 300px;
 	position: relative;
-	background-color: rgba(13, 23, 37, 0.901);
-	overflow: hidden;
+	background: linear-gradient(rgb(70, 4, 177), rgb(111, 0, 255));
 	border-radius: 9px;
 	margin: 1rem;
 	box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
@@ -452,29 +450,6 @@ span {
 	-webkit-backdrop-filter: blur(10.5px);
 	border: 1px solid rgba(255, 255, 255, 0.733);
 	transition: 0.8s;
-}
-
-.logistic-card:after {
-	content: "";
-	background: url(../Images/wavePurple.svg) repeat-x;
-	position: absolute;
-	bottom: -10px;
-	width: 6400px;
-	height: 198px;
-	z-index: -1;
-	opacity: 0.1;
-	animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-	transform: translate3d(0, 0, 0);
-}
-
-@keyframes wave {
-	0% {
-		margin-left: 0;
-	}
-
-	100% {
-		margin-left: -1600px;
-	}
 }
 
 .logistic-card:hover {
@@ -493,7 +468,7 @@ span {
 }
 
 .logistic-card-icon {
-	width: 200px;
+	width: 230px;
 }
 
 .logistic-card-icon img {
@@ -516,7 +491,7 @@ span {
 }
 
 .Logistic-button:hover {
-	border: 1px solid white;
+	border: 3px solid white;
 }
 
 .logistic-title {
@@ -542,7 +517,7 @@ span {
 
 .price-logistic {
 	width: 100%;
-	background-color: rgb(255, 24, 24);
+	background-color: rgb(255, 13, 0);
 }
 
 .price-logistic h2 {
