@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M/A-TRADE - Поиск и выкуп товаров из Китая в СНГ</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/media.css" />
 
-    <link rel="stylesheet" href="./slick/slick.css" />
-    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <!-- Font-Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-
+    <!-- Website icon -->
     <link rel="shortcut icon" href="./Images/LogoPhone.png" type="image/png" />
   </head>
-  <!-- jQuery JS -->
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <body>
     <div class="big-wrapper">
       <!-- Header / Navbar / Burger-Menu-->
@@ -92,43 +96,63 @@
             </p>
             <h3>Наши услуги:</h3>
             <p>
-              1. Переводчики в Китае.<br />
+              1. Переводчики в Китае.<br />
               2. Бизнес Сопровождение.<br />
               3. Мебельные туры.<br />
               4. Поиск Товаров.<br />
               5. Инспекция.<br />
-              6. Выкуп товаров с сайтов 1688, Таобао, Poizon.<br />
-              7. Закуп на рынках Китая.<br />
-              8. Фулфилмент для маркетплейсов.<br />
+              6. Выкуп товаров с сайтов 1688, Таобао, Poizon.<br />
+              7. Закуп на рынках Китая.<br />
+              8. Фулфилмент для маркетплейсов.<br />
               9. ‌Брендирование товара.<br />
               10. Транспортная логистика.
             </p>
-          </div>
-          <!-- Slider -->
-          <div class="slider">
-            <div class="slider-item">
-              <img src="./Images/IMG-CHINA-2.webp" alt="4" />
-            </div>
-            <div class="slider-item">
-              <img src="./Images/IMG-CHINA-1.webp" alt="4" />
-            </div>
-            <div class="slider-item">
-              <img src="./Images/IMG-CHINA-3.webp" alt="4" />
-            </div>
-            <div class="slider-item">
-              <img src="Images/M-A.webp" alt="M" />
-            </div>
-            <div class="slider-item">
-              <img src="Images/1688.webp" alt="1688" />
-            </div>
-            <div class="slider-item">
-              <img src="Images/Alibaba.webp" alt="A" />
-            </div>
-            <div class="slider-item">
-              <img src="Images/Taobao.webp" alt="T" />
-            </div>
-            <div class="slider-item">
-              <img src="Images/Poizon.webp" alt="P" />
+            <!-- Swiper slider -->
+            <div class="about-slider swiper-container">
+              <div class="about-list swiper-wrapper">
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/IMG-CHINA-2.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/IMG-CHINA-1.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/M-A.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/1688.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/Taobao.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/Alibaba.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="about-slide swiper-slide">
+                  <div class="image-slide">
+                    <img src="./Images/Poizon.webp" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
           <!-- About cards -->
@@ -232,12 +256,103 @@
             <div class="products-title">
               <h2>актуальные продукты</h2>
             </div>
-            <div class="product-video">
-              <video
-                autoplay
-                muted
-                loop
-                src="./Video/products-video.mp4"></video>
+            <div class="product-slider swiper">
+              <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image.webp" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>Тренажёры для фитнеса</h2>
+                      <h3>
+                        Поставщик профессиональных тренажеров для фитнес клубов
+                        и спортивных залов.
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-2.webp" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>Одежда</h2>
+                      <h3>Поставщик качественной одежды оптом</h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-3.webp" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>Майнеры</h2>
+                      <h3>Поставщик машин для заработка криптовалюты</h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-4.webp" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>Мебель для дома</h2>
+                      <h3>Поставщик качественной и надежной мебели для дома</h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-5.jpeg" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>
+                        Сельскохозяй- <br />
+                        ственная техника
+                      </h2>
+                      <h3>
+                        Поставщик профессиональной сельскохозяйственной техники
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-6.jpeg" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>Автозапчасти</h2>
+                      <h3>
+                        Поставщик автозапчастей для любой марки автомобиля
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-7.jpeg" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>Микроскопы</h2>
+                      <h3>Поставщик современных цифровых микроскопов</h3>
+                    </div>
+                  </div>
+
+                  <div class="slide-card swiper-slide">
+                    <div class="image-box">
+                      <img src="./Images/card-image-8.webp" alt="trainer" />
+                    </div>
+                    <div class="card-text">
+                      <h2>.......</h2>
+                      <h3>Поставщик ..............................</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination bulletsBtn"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -279,8 +394,7 @@
       </footer>
     </div>
     <!-- JavaScript -->
+    <script src="./JS/swiper.js"></script>
     <script src="./JS/index.js"></script>
-    <!-- Slick JS -->
-    <script src="./JS/slick.min.js"></script>
   </body>
 </html>

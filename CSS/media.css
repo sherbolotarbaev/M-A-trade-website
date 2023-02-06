@@ -251,12 +251,6 @@
 		width: 360px;
 	}
 
-	/* Slider */
-
-	.slider-item img {
-		height: 200px;
-	}
-
 	/* About Page */
 	.about-page {
 		padding: 0;
@@ -280,6 +274,17 @@
 
 	.card-title p {
 		font-size: 17px;
+	}
+
+	/* Swiper slider */
+	.about-slider {
+		padding: 60px 0 10px 0;
+		height: 230px;
+	}
+
+	.image-slide {
+		width: 100%;
+		height: 100%;
 	}
 
 	/* Logistic Page */
@@ -319,9 +324,10 @@
 		text-align: center;
 	}
 
-	.product-video {
-		padding-top: 80px;
-		width: 350px;
+	/* Swiper slider / Products */
+	.product-slider {
+		height: 515px;
+		margin-bottom: 140px;
 	}
 
 	/* Footer */

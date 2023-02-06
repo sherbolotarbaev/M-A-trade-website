@@ -335,15 +335,38 @@ span {
 	color: #ffffff;
 }
 
-/* Slider */
-.slider {
-	padding-top: 90px;
+/* Slider swiper */
+.about-slider {
+	padding: 80px 0 40px 0;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
 }
 
-.slider-item img {
-	margin: 0 auto;
-	max-width: 100%;
-	height: 450px;
+.about-slide {
+	text-align: center;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-slide {
+	text-align: center;
+}
+
+.image-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-slider .swiper-pagination-bullet {
+	font-size: 14px;
+	background-color: #ff0000;
 }
 
 /* About cards */
@@ -571,21 +594,88 @@ span {
 }
 
 .products-content {
-
-	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.product-video {
-	width: 900px;
+/* Swiper slider / Products */
+.product-slider {
+	max-width: 1120px;
+	width: 100%;
+	height: 540px;
+	margin-bottom: 50px;
 }
 
-.product-video video {
+.slide-container {
+	margin: 0 30px;
+	overflow: hidden;
+}
+
+.slide-card {
+	background-color: #132137;
+	width: 312px;
+	border-radius: 20px;
+	margin: 80px 0;
+}
+
+.slide-card .image-box {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+
+.slide-card .image-box img {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+	padding: 30px;
+}
+
+.card-text h2 {
+	font-size: 25px;
+	font-weight: 700;
+	padding-bottom: 2rem;
+	color: #fff;
+	position: relative;
+}
+
+.card-text h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 16px;
+	width: 93%;
+	height: 3px;
+	background-color: #ff0000;
+}
+
+.card-text h3 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.swiper-navBtn {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	padding: 30px;
+	background: #000000a2;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+	color: #ffffff;
+}
+
+.bulletsBtn .swiper-pagination-bullet {
+	background-color: #ff0000;
 }
 
 /* Footer */

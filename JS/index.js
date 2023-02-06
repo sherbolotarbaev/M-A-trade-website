@@ -1,50 +1,4 @@
-// burger menu твой OLD
-// hamburger = document.querySelector(".hamburger");
-//
-// hamburger.onclick = function () {
-// 	navBar = document.querySelector(".navbar");
-// 	navBar.classList.toggle("active");
-// };
-//
-// $(document).ready(function () {
-// 	$("#nav-icon3").click(function () {
-// 		$(this).toggleClass("open");
-// 	});
-// });
-//
-// $(document).ready(function () {
-// 	let hamburger = $("#nav-icon3");
-// 	let navbar = $(".navbar");
-//
-// 	navbar.find("a").click(function () {
-// 		hamburger.click();
-// 	});
-// });
-
-// burger menu V2
-// $(document).ready(function () {
-// 	// Выберите элемент кнопки бургера с помощью его ID
-// 	let hamburger = $("#nav-icon");
-// 	// Выберите элемент меню с помощью его класса
-// 	let navbar = $(".navbar");
-//
-// 	// Прикрепите обработчик события клика к кнопке бургера
-// 	hamburger.on("click", function () {
-// 		// Переключить класс "active" у элемента меню
-// 		navbar.toggleClass("active");
-// 		// Переключить класс "open" у элемента кнопки бургера
-// 		hamburger.toggleClass("open");
-// 	});
-//
-// 	// Прикрепите обработчик события клика к ссылкам внутри элемента меню
-// 	navbar.find("a").on("click", function () {
-// 		// Симулировать клик по кнопке бургера
-// 		hamburger.click();
-// 	});
-// });
-
-// burger menu V3
-// Ванильный JavaScript
+// Burger menu
 document.addEventListener("DOMContentLoaded", function () {
   // Выбрать элемент кнопки бургера с помощью его ID
   let hamburger = document.getElementById("nav-icon");
@@ -75,31 +29,6 @@ const clear = document.querySelector(".clear");
 clear.onclick = function () {
   document.getElementById("searchId").value = "";
 };
-
-// slick
-$(document).ready(function () {
-  $(".slider").slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    fade: true,
-    cssEase: "linear",
-
-    responsive: [
-      {
-        breakpoint: 750,
-        settings: {
-          dots: false,
-          arrows: true,
-        },
-      },
-    ],
-  });
-});
 
 // Animation
 
@@ -143,3 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(elm);
   }
 });
+
