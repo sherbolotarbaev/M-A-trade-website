@@ -128,6 +128,10 @@
 		background-color: rgba(243, 0, 0, 0.699);
 	}
 
+	.nav-links li a:hover::after {
+		width: 0;
+	}
+
 	.cta2 {
 		display: none;
 	}
